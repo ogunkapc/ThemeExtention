@@ -16,24 +16,18 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       themeMode: ThemeMode.system,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         scaffoldBackgroundColor: const Color(0xFFEBEBEB),
         useMaterial3: true,
         extensions: <ThemeExtension<dynamic>>[
-          // supply a list of extensions if needed
+          // supply a list of extensions
           PlayThemeData.light(),
-          // PlayTextTheme.fallback(),
         ],
       ),
       darkTheme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         scaffoldBackgroundColor: const Color(0xFF252627),
         useMaterial3: true,
-        textTheme: const TextTheme(bodyMedium: TextStyle(color: Colors.purple)),
         extensions: <ThemeExtension<dynamic>>[
-          // supply a list of extensions if needed
           PlayThemeData.dark(),
-          // PlayTextTheme.fallback(),
         ],
       ),
       debugShowCheckedModeBanner: false,

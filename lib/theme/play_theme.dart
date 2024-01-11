@@ -6,6 +6,9 @@ class PlayThemeData extends ThemeExtension<PlayThemeData> {
   final Color? headerColor;
   final Color? cardTileColor;
 
+  static PlayThemeData of(BuildContext context) =>
+      Theme.of(context).extension<PlayThemeData>()!;
+
   const PlayThemeData({
     this.textTheme,
     this.headerColor,

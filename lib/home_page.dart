@@ -45,7 +45,7 @@ class CardTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context).extension<PlayThemeData>()!;
+    final theme = PlayThemeData.of(context);
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: ShapeDecoration(
@@ -94,7 +94,7 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context).extension<PlayThemeData>()!;
+    final theme = PlayThemeData.of(context);
     return Container(
       height: 250,
       padding: const EdgeInsets.fromLTRB(16, 37, 16, 16),
